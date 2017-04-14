@@ -1,0 +1,167 @@
+.bio{
+  background: white;
+  .bio-container{
+    background: white;
+    width: 1000px;
+    margin: 0 auto;
+    .bio-header{
+      border-top: 1px solid #eee;
+      height: 176.4px;
+      width: 80%;
+      margin: 0 auto;
+      border-bottom: solid 1px #eee;
+      color: rgb(0.5,128,128);
+      p:first-child{
+        font-size: 54px;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 50px;
+      }
+      p:nth-child(2){
+        text-align: center;
+        color: #727878;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 25px auto 20px auto;
+      }
+    }
+    .bio-info-container{
+      // background: blue;
+      width: 850px;
+      height: 453.6px;
+      margin: 0 auto;
+      .bio-info-about{
+        float: left;
+        height: 100%;
+        width: calc(100%/3);
+        h1{
+          padding-top: 50px;
+          font-size: 28px;
+          color: rgb(0.5,128,128);
+        }
+        p{
+          font-size: 15px;
+          line-height: 2;
+          text-align: left;
+          white-space: nowrap;
+        }
+      }
+      .bio-info-pic{
+        float: left;
+        // background: grey;
+        height: 100%;
+        width: calc(100%/3);
+        position: relative;
+        // border-top: 1px solid #eee;
+        div{
+          width: 220px;
+          height: 220px;
+          background: no-repeat center url("./../images/Natsu's_image.png");
+          border-radius: 50%;
+          border: solid 15px #F3EFE0;
+          position: absolute;
+          top: 8%;
+          left: 5.7%;
+        }
+      }
+      .bio-info-details{
+        float: left;
+        // background: blue;
+        height: 100%;
+        width: calc(100%/3);
+        // border-top: 1px solid #eee;
+        h3:first-child{
+          font-size: 28px;
+          padding-top: 50px;
+          color: #018080;
+          padding-bottom: 30px;
+        }
+        h4{
+          margin-bottom: 20px;
+          font-weight: bold !important;
+        }
+        p{
+          margin-bottom: 20px;
+          color: #727878;
+        }
+        button{
+          width: 80px;
+          height: 30px;
+          color: white;
+          font-size: 12px;
+          border-radius: 5px;
+          background: #1b95e0;
+          border: none;
+          i{
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px){
+    .bio-container{
+      width: 100%;
+      .bio-info-container{
+        width: 100%;
+        .bio-info-about{
+          height: auto;
+          width: 100%;
+          margin: 0 auto;
+          white-space: wrap;
+          p, h1{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            white-space: normal;
+          }
+          .remove-linebreak{
+            display: none;
+          }
+        }
+        .bio-info-pic{
+          width: 100%;
+          height: auto;
+          div{
+            position: static;
+            margin: 30px auto;
+          }
+        }
+        .bio-info-details{
+          height: auto;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+  @media(max-width: 450px){
+    .bio-container{
+        .bio-header{
+          height: auto;
+        }
+    }
+  }
+}
+.city-bg-container{
+  overflow: hidden;
+  height: 50vh;
+  clear: both;
+}
+.city-bg{
+  background: no-repeat center right fixed url('./../images/jessica-furtney-177531.jpg');
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  clear: both;
+}
+.city-bg-filter{
+  height: 100%;
+  background: rgba(0.5,128,128, 0.7);
+  z-index: 2;
+  width: 100%;
+  clear: both;
+}
