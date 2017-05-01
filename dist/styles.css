@@ -338,6 +338,9 @@ button:focus {
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat; } }
+  @media (max-width: 320px) {
+    .projects .projects-div-1 {
+      width: 80%; } }
 
 .skills {
   clear: both; }
