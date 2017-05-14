@@ -28,10 +28,7 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function(){
-      // if($(window).width() < 1200){
-      //   // $('.sticky-nav').css("right", "50px");
-      //   console.log(window.width());
-      // }
+
 
       if($(this).scrollTop() > $('#bio-anchor').offset().top -10){
         $(".sticky-nav-div").addClass("nav-displace");
@@ -78,14 +75,12 @@ $(document).ready(function(){
 
       if($(window).width() < 1104){
         $('.sticky-nav').css("right", "50px");
-        console.log("hello");
       }
       if($(window).width() >= 1104){
         if($(this).scrollTop() < $('#bio-anchor').offset().top - 70){
           $('.sticky-nav').css("right", "150px");
         }
         // $('.sticky-nav').css("right", "150px");
-        console.log("hello");
       }
 
     });

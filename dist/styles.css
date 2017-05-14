@@ -393,7 +393,7 @@ button:focus {
       width: calc(100%/2); } }
 
 .top-bg {
-  background: no-repeat center right fixed url("./../images/emile-perron-190221.jpg");
+  background: no-repeat center right fixed url("./images/Resized Image.png");
   background-size: cover;
   height: 100vh;
   width: 100%;
