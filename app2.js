@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     $(".top-nav-button").on('click', function(){
         $("body").animate({
           scrollTop: $('#bio-anchor').offset().top

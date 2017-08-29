@@ -19,7 +19,6 @@ gulp.task('build-css', function(){
   .pipe(gulp.dest('./dist'));
 });
 
-
 gulp.task('build', ['build-css'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
