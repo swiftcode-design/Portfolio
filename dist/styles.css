@@ -203,7 +203,8 @@ button:focus {
     cursor: pointer;
     height: 45px;
     width: 90px;
-    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #018080;
+    background: #434242;
     color: white;
     text-align: center;
     transition: all ease-in-out 0.2s; }
@@ -219,6 +220,9 @@ button:focus {
     width: 100%;
     left: 50%;
     margin-left: -50%; }
+    .sticky-nav .sticky-nav-div {
+      border-left: none;
+      border-right: none; }
     .sticky-nav .sticky-nav-div.nav-displace {
       margin-top: 0px; } }
 
@@ -261,75 +265,65 @@ button:focus {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 750px;
+    width: 850px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 50px 0;
     perspective: 800px; }
-    .projects .projects-div-2 .projects-div-2-project {
-      margin-top: 20px;
-      width: 350px;
-      height: 250px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      box-shadow: 10px 10px 5px #888888; }
-      .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter {
-        cursor: default;
-        height: 100%;
-        width: 100%;
-        background: rgba(1, 128, 128, 0);
-        transition: all ease-in-out 0.2s; }
-        .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-redirect {
-          cursor: pointer;
+    .projects .projects-div-2 .project-box {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      border: solid 1px #22A39F;
+      background: white;
+      justify-content: center;
+      padding: 0 0 0 0;
+      margin: 10px 0; }
+      .projects .projects-div-2 .project-box h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #22A39F;
+        padding: 5px;
+        background: #F3EFE0; }
+      .projects .projects-div-2 .project-box p {
+        color: black;
+        padding: 8px;
+        font-size: 15px; }
+      .projects .projects-div-2 .project-box .project-box-ul {
+        display: flex;
+        justify-content: space-around;
+        background: #F3EFE0; }
+        .projects .projects-div-2 .project-box .project-box-ul ul {
+          list-style: square;
+          color: #22A39F;
+          font-size: 15px;
+          padding: 15px 0; }
+          .projects .projects-div-2 .project-box .project-box-ul ul li {
+            padding: 2px 0; }
+      .projects .projects-div-2 .project-box img {
+        align-self: center;
+        height: 250px;
+        width: 98%; }
+      .projects .projects-div-2 .project-box .project-box-buttons {
+        display: flex;
+        justify-content: space-around; }
+        .projects .projects-div-2 .project-box .project-box-buttons a {
+          width: calc(90%/3);
           height: 40px;
-          width: 40px;
-          background: #22A39F;
-          float: right;
-          text-align: center; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-redirect i {
-            margin-top: 12px;
-            font-weight: bold;
-            color: white; }
-        .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc {
-          opacity: 0;
-          clear: both;
-          color: white;
-          width: 90%;
-          margin: 0 auto;
-          transition: all ease-in-out 0.2s; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc .projects-div-2-project-filter-desc-inner {
-            transition: all ease-in-out 0.2s;
-            width: 100%;
-            pointer-events: none; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc h1 {
-            font-size: 30px; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc h4 {
-            font-size: 20px;
-            padding-top: 15px; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc p {
-            font-size: 5px;
-            padding-top: 10px;
-            font-weight: lighter;
-            clear: both;
-            transition: all ease-in-out 0.2s; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter .projects-div-2-project-filter-desc hr {
-            border: 1px solid white;
-            width: 40%;
-            float: left;
-            transition: all ease-in-out 0.2s; }
-      .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter:hover {
-        background: rgba(1, 128, 128, 0.8); }
-        .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter:hover .projects-div-2-project-filter-desc {
-          opacity: 1; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter:hover .projects-div-2-project-filter-desc .projects-div-2-project-filter-desc-inner {
-            margin-left: 0;
-            pointer-events: all;
-            position: static; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter:hover .projects-div-2-project-filter-desc hr {
-            width: 100%; }
-          .projects .projects-div-2 .projects-div-2-project .projects-div-2-project-filter:hover .projects-div-2-project-filter-desc p {
-            margin-left: 0;
-            font-size: 15px; }
+          margin: 10px 0;
+          border: solid 1px #434242;
+          color: #22A39F; }
+        .projects .projects-div-2 .project-box .project-box-buttons button {
+          text-align: center;
+          height: 40px;
+          border: none;
+          background: #42AFA9;
+          color: #434242;
+          width: 100%; }
+        .projects .projects-div-2 .project-box .project-box-buttons button:hover {
+          background: #018080;
+          color: white; }
+        .projects .projects-div-2 .project-box .project-box-buttons a:hover {
+          border: solid 1px #434242; }
   @media (max-width: 1000px) {
     .projects .projects-div-1 {
       width: 100%; }

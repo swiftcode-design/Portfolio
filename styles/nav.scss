@@ -18,7 +18,8 @@ button:focus{
     cursor: pointer;
     height: 45px;
     width: 90px;
-    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #018080;
+    background: #434242;
     color: white;
     text-align: center;
     transition: all ease-in-out 0.2s;
@@ -37,7 +38,8 @@ button:focus{
     left: 50%;
     margin-left: - 50%;
     .sticky-nav-div{
-      // background: rgba(0, 0, 0, 1);
+      border-left: none;
+      border-right: none;
     }
     .sticky-nav-div.nav-displace {
       margin-top: 0px;
