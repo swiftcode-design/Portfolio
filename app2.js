@@ -95,11 +95,3 @@ $(document).ready(function(){
 
 
 });
-
-
-// $(window).scroll(function(){
-//   if($(this).scrollTop() > 1500){
-//     if($(window).width() > 1024){
-//       $('.beatsEpPremiumMain').slideDown(800);
-//     }
-//   }
